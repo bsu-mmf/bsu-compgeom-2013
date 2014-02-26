@@ -1,0 +1,140 @@
+/* Lab 1 */
+
+.button-container > button,label,select {
+    position: absolute;
+    left: 640px;
+}
+
+.lab1-name {
+    font-weight: bold;
+    font-family: verdana;
+}
+.lab1-pane {
+    position: absolute;
+    border: 1px solid #000000;
+    top: 40px;
+}
+#lab1-selection {
+    z-index: 100;
+}
+.check-lab1 {
+    top: 160px;
+}
+.button-generate-lab1 {
+    top: 120px;
+}
+.text-lab1-k {
+    top: 40px;
+}
+.text-lab1-p {
+    top: 80px;
+}
+.lab1-point-selector {
+    position: absolute;
+    top: 180px;
+    width: 240px;
+}
+
+/* Lab 2 */
+
+.lab2-name {
+    top: 460px;
+    position: absolute;
+    font-weight: bold;
+    font-family: verdana;
+}
+.lab2-pane {
+    position: absolute;
+    border: 1px solid #000000;
+    top: 480px;
+}
+.lab2-button-generate {
+    top: 520px;
+}
+.lab2-text-p {
+    top: 480px;
+}
+#lab2-hull {
+    position: absolute;
+    top: 560px;
+    width: 240px;
+}
+
+/* Lab 3 */
+
+.lab3-name {
+    top: 900px;
+    position: absolute;
+    font-weight: bold;
+    font-family: verdana;
+}
+.lab3-pane {
+    position: absolute;
+    border: 1px solid #000000;
+    top: 920px;
+}
+.lab3-button-generate {
+    top: 960px;
+}
+.lab3-text-p {
+    top: 920px;
+}
+
+/* Lab 4 */
+
+.lab4-name {
+    top: 1340px;
+    position: absolute;
+    font-weight: bold;
+    font-family: verdana;
+}
+.lab4-pane {
+    position: absolute;
+    border: 1px solid #000000;
+    top: 1360px;
+}
+.lab4-button-generate {
+    top: 1360px;
+}
+.lab4-button-undo {
+    top: 1400px;
+}
+.lab4-text-prec {
+    top: 1440px;
+}
+
+
+/* Lab 5 */
+
+.lab5-name {
+    top: 1780px;
+    position: absolute;
+    font-weight: bold;
+    font-family: verdana;
+}
+.lab5-pane {
+    position: absolute;
+    border: 1px solid #000000;
+    top: 1800px;
+}
+.lab5-text-rotY {
+	top: 1800px;
+}
+.lab5-text-rotX {
+    top: 1830px;
+}
+.lab5-text-rotZ {
+    top: 1860px;
+}
+.lab5-text-props {
+    top: 1900px;
+}
+.lab5-proj-type {
+    top: 1920px;
+}
+.lab5-text-alpha {
+    top: 1950px;
+}
+.lab5-refresh {
+    top: 1980px;
+}

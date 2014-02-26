@@ -1,0 +1,113 @@
+<html>
+    
+    <head></head>
+    
+    <body>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <div class="lab1">
+            <span class="lab1-name">Quadtree</span>
+            <div>
+                <canvas class="lab1-pane" id="lab1-canvas" width="600" height="350"></canvas>
+                <canvas class="lab1-pane" id="lab1-selection" width="600" height="350"></canvas>
+            </div>
+            <div class="button-container">
+                <button class="button-generate-lab1" id="lab1-new">Generate map</button>
+                <label class="check-lab1">
+                    <input type="checkbox" id="lab1-grid" />Show Grid</label>
+                <label class="text-lab1-p">k =
+                    <input type="text" size="8" value="3" id="lab1-k" />
+                </label>
+                <label class="text-lab1-k">points =
+                    <input type="text" size="8" value="25" id="lab1-p" />
+                </label>
+                <select class="lab1-point-selector" name="Selected Points" size="10"></select>
+            </div>
+        </div>
+        <div class="lab2">
+            <span class="lab2-name">Graham scan</span>
+            <div>
+                <canvas class="lab2-pane" id="lab2-canvas" width="600" height="350"></canvas>
+            </div>
+            <div class="button-container">
+                <button class="lab2-button-generate" id="lab2-new">Generate map</button>
+                <label class="lab2-text-p">points =
+                    <input type="text" size="8" value="30" id="lab2-p" />
+                </label>
+                <select id="lab2-hull" name="Convex Hull" size="10"></select>
+            </div>
+        </div>
+        <div class="lab3">
+            <span class="lab3-name">Liang-Barsky</span>
+            <div>
+                <canvas class="lab3-pane" id="lab3-canvas" width="600" height="350"></canvas>
+                <canvas class="lab3-pane" id="lab3-selection" width="600" height="350"></canvas>
+            </div>
+            <div class="button-container">
+                <button class="lab3-button-generate" id="lab3-new">Generate map</button>
+                <label class="lab3-text-p">points =
+                    <input type="text" size="8" value="30" id="lab3-p" />
+                </label>
+            </div>
+        </div>
+        <div class="lab4">
+            <span class="lab4-name">De Casteljau</span>
+            <div>
+                <canvas class="lab4-pane" id="lab4-canvas" width="600" height="350"></canvas>
+            </div>
+            <div class="button-container">
+                <button class="lab4-button-generate" id="lab4-new">Create points</button>
+                <button class="lab4-button-undo" id="lab4-undo" disabled="true">Undo</button>
+                <label class="lab4-text-prec">step =
+                    <input type="text" size="8" value="30" id="lab4-p" />
+                </label>
+            </div>
+        </div>
+        <div class="lab5">
+            <span class="lab5-name">Oblique projection</span>
+            <div>
+                <canvas class="lab5-pane" id="lab5-canvas" width="600" height="600"></canvas>
+            </div>
+            <div class="button-container">
+				<label class="lab5-text-rotY">rotate n (Y)
+                    <input type="text" size="8" value="0" id="lab5-ry" />
+                </label>
+                <label class="lab5-text-rotX">rotate n (Z)
+                    <input type="text" size="8" value="0" id="lab5-rx" />
+                </label>
+                <label class="lab5-text-rotZ">rotate n (X)
+                    <input type="text" size="8" value="0" id="lab5-rz" />
+                </label>
+                <label class="lab5-text-props">Projection properties</label>
+                <select class="lab5-proj-type" id="lab5-type" name = "Type">
+                    <option>Cavalier</option>
+                    <option selected="selected">Cabinet</option>
+                </select>
+                <label class="lab5-text-alpha">angle
+                    <input type="text" size="8" value="45" id="lab5-alp" />
+                </label>
+                <button class="lab5-refresh" id="lab5-ref">Refresh</button>
+            </div>
+        </div>
+        <script src="public/common.js"></script>
+        <script src="public/bezier.js"></script>
+        <script src="public/lodash.min.js"></script>
+        <script src="public/point.js"></script>
+        <script src="public/line.js"></script>
+        <script src="public/srect.js"></script>
+        <script src="public/lab1.js"></script>
+        <script src="public/lab2.js"></script>
+        <script src="public/lab3.js"></script>
+        <script src="public/lab4.js"></script>
+        <script src="public/lab5.js"></script>
+        <script>
+            window.onload = function() {
+                lab1();
+                lab2();
+                lab3();
+                lab4();
+                lab5();
+            }
+        </script>
+    </body>
+
+</html>
